@@ -14,18 +14,17 @@ int main(int argc,char **argv)
     }
     if (argc == 3)
     {
-        char temp_si = argv[2][0];
-        if (temp_si=='C')
+        if (argv[2][0]=='C')
         {
             printf("%.2f F\n",(temp_value*9/5)+32);
             printf("%.2f K\n",temp_value+273.15);
         }
-        if (temp_si=='F')
+        if (argv[2][0]=='F')
         {
             printf("%.2f C\n",(temp_value-32)*5/9);
             printf("%.2f K\n",((temp_value-32)*5/9)+273.15);
         }
-        if (temp_si=='K')
+        if (argv[2][0]=='K')
         {
             printf("%.2f C\n",temp_value-273.15);
             printf("%.2f F\n",((temp_value-273.15)*9/5)+32);
