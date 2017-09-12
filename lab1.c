@@ -3,7 +3,7 @@
 
 int main(int argc,char **argv)
 {
-    float inp_temp;
+    double inp_temp;
     if (argc >= 2)
         inp_temp = atoi(argv[1]);
     if (argc == 2)
