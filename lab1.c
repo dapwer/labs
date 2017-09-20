@@ -21,6 +21,16 @@ int main(int argc,char **argv)
         else printf("Error. Temp < 0 K");
     }
     break;
+    case 'С':
+    {
+        if (inp_temp>=-273.15)
+        {
+            printf("%.2f F\n",(inp_temp*9/5)+32);
+            printf("%.2f K\n",inp_temp+273.15);
+        }
+        else printf("Error. Temp < 0 K");
+    }
+    break;
     case 'F':
     {
         if ((inp_temp-32)*5/9>=0)
